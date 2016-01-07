@@ -1,4 +1,3 @@
-
 def fibonacciSequence():
     limit = int(input("How far to go?\n"))
     sequenceList = [0]
@@ -9,6 +8,6 @@ def fibonacciSequence():
             sequenceList.append(1)
         else:
             sequenceList.append(sequenceList[-1] + sequenceList[-2])
-    print ("\nHere are", limit, "digits of Fibonacci:", sequenceList)
+    print("\nHere are", limit, "digits of Fibonacci:", sequenceList)
 
 fibonacciSequence()
