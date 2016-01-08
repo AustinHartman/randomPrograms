@@ -3,7 +3,7 @@ def decimalToBinary(x):
 
    if x > 1:
        decimalToBinary(x//2)
-   print(x % 2, end = "")
+   print(x % 2, end = '')
 
-number = int(input("What is your number?"))
+number = int(input("What is your number?\n"))
 decimalToBinary(number)
