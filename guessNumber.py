@@ -1,9 +1,11 @@
 import random
 from sys import exit
 def guessNumber():
-    print("This is a guessing game the number is 0 to 25")
+    low = int(input("What is the low value?"))
+    high = int(input("What is the high value?"))
+    print("This is a guessing game the number is", low, "to", high)
     guess = int(input("What is your guess?\n"))
-    number = random.randint(0,25)
+    number = random.randint(low, high)
     while guess != number:
         if guess > number:
             print("Too high.")
