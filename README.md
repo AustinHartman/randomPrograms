@@ -1,7 +1,7 @@
 mathPrograms
 ===========
 
-Short, random, and really simple math programs.
+Short, random, and really simple programs.
 
 This program is written for python3, therefore running it on any version of python lower than 3 will produce errors at some point.
 Once you have installed python3 all you need to do is run each program by simply typing: `python3 program.py' in the mathPrograms directory.
