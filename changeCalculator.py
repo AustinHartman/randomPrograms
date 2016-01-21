@@ -41,5 +41,10 @@ def changeCalc():
         pennies = change//.01
         change = change - (pennies * .01)
         print("Pennies:", int(pennies))
+    rerun = input("Want to run again?\n")
+    if rerun == 'yes':
+        changeCalc()
+    else:
+        exit(0)
 
 changeCalc()
