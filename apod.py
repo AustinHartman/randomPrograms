@@ -4,4 +4,5 @@ def apodImage():
     date = input("Enter a date:")
     link = "http://apod.nasa.gov/apod/ap" + date + ".html"
     webbrowser.open(link)
+    webbrowser.
 apodImage()

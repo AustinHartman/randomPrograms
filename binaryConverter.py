@@ -14,7 +14,9 @@ def callback():
     else:
         quit(0)
 
-number = int(input("What is your number?\n"))
-decimalToBinary(number)
-callback()
+#number = int(input("What is your number?\n"))
+#decimalToBinary(number)
+#callback()
+
+
 

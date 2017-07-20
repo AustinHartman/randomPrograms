@@ -1,38 +1,38 @@
 from tkinter import *
 
-#All the functions used in GUI
-def decimalToBinary(x):
-   if x > 1:
-       decimalToBinary(x//2)
-   print(x % 2, end = '')
-
 window = Tk()
-window.title("Boring GUI")
+window.title("Calc")
 window.geometry("480x480")
+value = Entry(window)
+
+
+i = value.get()
+
+
+def callback(i):
+    if i != int():
+        i = int(value.get())
+
+def decimalToBinary(x):
+    callback()
+    if x > 1:
+        decimalToBinary(x//2)
+    print(x % 2, end = '')
+
+
 
 header = Label(window, text="This might become a basic calculator!")
 
-value = Entry(window)
+# update = Button(window, text="Update", command=callback)
 
-try:
-    i = int(value.get())
-except ValueError:
-    pass
-if int(value.get()) >= 0:
-    i = int(value.get())
-else:
-    i = 0
-
-quadForm = Button(window, text="Quadratic Formula")
-
-binConv = Button(window, text="Binary Converter", command=decimalToBinary(i))
+button = Button(window, text="Binary Converter", command=decimalToBinary)
 
 quit = Button(window, text="Quit", command=window.quit)
 
-header.pack(fill=BOTH, padx=3, pady=3)
 value.pack()
-quadForm.pack(fill=BOTH, padx=3, pady=3)
-binConv.pack(fill=BOTH, padx=3, pady=3)
+header.pack(fill=BOTH, padx=3, pady=3)
+# update.pack(fill=BOTH, padx=3, pady=3)
+button.pack(fill=BOTH, padx=3, pady=3)
 quit.pack(fill=BOTH, padx=3, pady=3)
-window.mainloop()
+mainloop()
 
