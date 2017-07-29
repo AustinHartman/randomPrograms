@@ -26,7 +26,7 @@ def is_prime(x):
         d += 2
     return True
 
-
+print(is_prime(971))
 thr_dig = prime_list(101, 1001)
 fou_dig = prime_list(1001, 10001)
 fiv_dig = prime_list(10001, 100001)
