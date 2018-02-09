@@ -1,6 +1,6 @@
-def binaryToDecimal(x):
-	rev = str(x)[::-1]
-	power = 0
+def binary_to_decimal(x):
+    rev = str(x)[::-1]
+    power = 0
 	integer = 0
 	while power < len(rev):
 		if int(rev[power]) == 1:
@@ -10,10 +10,10 @@ def binaryToDecimal(x):
 	repeat = input("Run again?\n")
 	if repeat == 'yes':
 		num = input("What is your number?\n")
-		binaryToDecimal(num)
+		binary_to_decimal(num)
 	else:
 		quit(0)
 num = input("What is your number?\n")
-binaryToDecimal(num)
+binary_to_decimal(num)
 
 
